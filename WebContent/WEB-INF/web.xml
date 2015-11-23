@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+<!-- <servlet> -->
+<!-- 	<servlet-name>ServletTest</servlet-name> -->
+<!-- 	<servlet-class>servletWeb.ServletTest</servlet-class> -->
+<!-- </servlet> -->
+
+<!-- <servlet-mapping> -->
+<!-- 	<servlet-name>ServletTest</servlet-name> -->
+<!-- 	<url-pattern>/index</url-pattern> -->
+<!-- </servlet-mapping> -->
+
+<servlet>
+	<servlet-name>HelloServlet</servlet-name>
+	<servlet-class>servletWeb.HelloServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>HelloServlet</servlet-name>
+	<url-pattern>/hello</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ArticleAdd</servlet-name>
+	<servlet-class>servletWeb.ArticleAdd</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>ArticleAdd</servlet-name>
+	<url-pattern>/articleadd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>mainSelect</servlet-name>
+	<servlet-class>servletWeb.mainSelect</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>mainSelect</servlet-name>
+	<url-pattern>/main</url-pattern>
+</servlet-mapping>
+
+<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+</web-app>
